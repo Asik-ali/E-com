@@ -178,12 +178,14 @@ function Navbar() {
                   </a>
                 </div>
                 <div className="hidden lg:ml-8 lg:flex">
-                  <a href="#" className="flex items-center text-gray-700 ">
+                  <Link to={'/profile'} className="flex items-center text-gray-700 " style={{ color: mode === 'dark' ? 'white' : '', }}>
+
                     <img
                       className="inline-block w-10 h-10 rounded-full"
                       src="https://overreacted.io/static/profile-pic-c715447ce38098828758e525a1128b87.jpg"
                       alt="Dan_Abromov" />
-                  </a>
+
+                  </Link>
                 </div>
 
                 <div className="flex lg:ml-6">
