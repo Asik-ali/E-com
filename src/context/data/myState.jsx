@@ -134,18 +134,7 @@ function myState(props) {
             setLoading(false)
         }
     }
-    const deleteUser = async (item) => {
-        setLoading(true)
-        try {
-            await deleteDoc(doc(fireDB, 'user', item.id))
-            toast.success('Product Deleted successfully')
-            getProductData();
-            setLoading(false)
-        } catch (error) {
-            console.log(error)
-            setLoading(false)
-        }
-    }
+    
 
 
     const [order, setOrder] = useState([]);
@@ -201,7 +190,7 @@ function myState(props) {
         <MyContext.Provider value={{
             mode, toggleMode, loading, setLoading,
             products, setProducts, addProduct, product,
-            edithandle, updateProduct, deleteProduct, order,deleteUser,
+            edithandle, updateProduct, deleteProduct, order,
             user, searchkey, setSearchkey,filterType,setFilterType,
             filterPrice,setFilterPrice
         }}>
