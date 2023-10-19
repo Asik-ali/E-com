@@ -83,7 +83,7 @@ function Cart() {
     }
 
     var options = {
-      key: "",
+      key: "rzp_test_7peS86S2kg20zp",
       key_secret: "",
       amount: parseInt(grandTotal * 100),
       currency: "INR",
