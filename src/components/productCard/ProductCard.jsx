@@ -15,7 +15,7 @@ function ProductCard() {
 
     const addCart = (product)=> {
         dispatch(addToCart(product));
-        toast.success('add to cart');
+        toast.success('Add to cart');
 
     }
 
