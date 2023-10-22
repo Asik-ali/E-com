@@ -5,8 +5,7 @@ import myContext from '../../context/data/myContext';
 
 function Profile() {
   const context = useContext(myContext)
-  const { mode, product ,searchkey, setSearchkey,filterType,setFilterType,
-      filterPrice,setFilterPrice,user } = context
+  const { mode} = context
   const userData = JSON.parse(localStorage.getItem('user'));
   const [orderCount, setOrderCount] = useState(0);
 
@@ -27,7 +26,7 @@ function Profile() {
         <div>
           <p className="text-lg mb-2">Email: {userData.user.email}</p>
           <p className="text-lg">UID: {userData.user.uid}</p>
-          <p className="text-lg">NAME: {user.name}</p>
+          <p className="text-lg">NAME: {userData.user.name}</p>
           <p className="text-lg">Orders: {orderCount}</p>
 
           {/* Additional user information can be displayed here */}
