@@ -17,7 +17,7 @@ function Cart() {
   const dispatch = useDispatch()
 
   const cartItems = useSelector((state) => state.cart);
-  console.log(cartItems)
+  // console.log(cartItems)
 
   const deleteCart = (item) => {
     dispatch(deleteFromCart(item));
@@ -129,7 +129,7 @@ function Cart() {
 
     var pay = new window.Razorpay(options);
     pay.open();
-    console.log(pay)
+    // console.log(pay)
 
 
   }

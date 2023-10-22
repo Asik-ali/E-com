@@ -39,7 +39,7 @@ function myState(props) {
 
     const addProduct = async () => {
         if (products.title == null || products.price == null || products.imageUrl == null || products.category == null || products.description == null) {
-            return toast.error("all fields are required")
+            return toast.error("All fields are required")
         }
 
         setLoading(true)
@@ -54,7 +54,7 @@ function myState(props) {
             getProductData();
             setLoading(false)
         } catch (error) {
-            console.log(error);
+            // console.log(error);
             setLoading(false)
         }
         // setProducts("")
@@ -86,7 +86,7 @@ function myState(props) {
             return () => data;
 
         } catch (error) {
-            console.log(error)
+            // console.log(error)
             setLoading(false)
         }
 
@@ -115,7 +115,7 @@ function myState(props) {
             setLoading(false)
 
         } catch (error) {
-            console.log(error)
+            // console.log(error)
             setLoading(false)
         }
     }
@@ -130,7 +130,7 @@ function myState(props) {
             getProductData();
             setLoading(false)
         } catch (error) {
-            console.log(error)
+            // console.log(error)
             setLoading(false)
         }
     }
@@ -149,10 +149,10 @@ function myState(props) {
                 setLoading(false)
             });
             setOrder(ordersArray);
-            console.log(ordersArray)
+            // console.log(ordersArray)
             setLoading(false);
         } catch (error) {
-            console.log(error)
+            // console.log(error)
             setLoading(false)
         }
     }
@@ -169,10 +169,10 @@ function myState(props) {
                 setLoading(false)
             });
             setUser(usersArray);
-            console.log(usersArray)
+            // console.log(usersArray)
             setLoading(false);
         } catch (error) {
-            console.log(error)
+            // console.log(error)
             setLoading(false)
         }
     }
