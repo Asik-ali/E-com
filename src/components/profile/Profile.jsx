@@ -25,7 +25,7 @@ function Profile() {
       <h2 className="text-2xl font-bold mb-4">User Profile</h2>
       {userData ? (
         <div>
-          <p className="text-lg mb-2">Email: {user.email}</p>
+          <p className="text-lg mb-2">Email: {userData.user.email}</p>
           <p className="text-lg">UID: {userData.user.uid}</p>
           <p className="text-lg">NAME: {user.name}</p>
           <p className="text-lg">Orders: {orderCount}</p>
