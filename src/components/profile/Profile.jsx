@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import myContext from '../../context/data/myContext';
 
 function Profile() {
@@ -21,9 +21,9 @@ function Profile() {
       <h2 className="text-2xl font-bold mb-4">User Profile</h2>
       {userData ? (
         <div>
-          <p className="text-lg mb-2">Name: {userData.user.name}</p>
-          <p className="text-lg">Email: {userData.user.email}</p>
-          <p className="text-lg">UID: {userData.user.uid}</p>
+          <p className="text-lg mb-2">Name: {userData.name}</p>
+          <p className="text-lg">Email: {userData.email}</p>
+          <p className="text-lg">UID: {userData.uid}</p>
           <p className="text-lg">Orders: {orderCount}</p>
           {/* Additional user information can be displayed here */}
         </div>
