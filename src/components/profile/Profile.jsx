@@ -35,7 +35,7 @@ function Profile() {
         <p className="text-lg">No user data available</p>
       )}
 
-      <div className="flow-root">
+      <div className="flow-root bg-black p-2 text-white">
         <a onClick={logout} className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer" style={{ color: mode === 'dark' ? 'white' : '', }}>
           Logout
         </a>
