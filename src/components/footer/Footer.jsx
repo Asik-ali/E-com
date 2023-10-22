@@ -19,9 +19,9 @@ function Footer() {
                 <li>
                   <a href='https://e-com-theta-fawn.vercel.app/order' className="text-gray-600 hover:text-gray-800" style={{ color: mode === 'dark' ? 'white' : '' }}>Order</a>
                 </li>
-                <li>
+                {/* <li>
                   <a className="text-gray-600 hover:text-gray-800" style={{ color: mode === 'dark' ? 'white' : '' }}>Local For Vocal</a>
-                </li>
+                </li> */}
                 <li>
                   <a href='https://e-com-theta-fawn.vercel.app/cart' className="text-gray-600 hover:text-gray-800" style={{ color: mode === 'dark' ? 'white' : '' }}>Cart</a>
                 </li>
