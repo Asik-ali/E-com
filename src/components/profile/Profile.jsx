@@ -27,6 +27,7 @@ function Profile() {
         <div>
           <p className="text-lg mb-2">Email: {userData.user.email}</p>
           <p className="text-lg">UID: {userData.user.uid}</p>
+          <p className="text-lg">NAME: {userData.user.name}</p>
           <p className="text-lg">Orders: {orderCount}</p>
 
           {/* Additional user information can be displayed here */}
