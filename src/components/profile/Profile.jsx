@@ -1,8 +1,12 @@
 
 
 import React, { useState, useEffect } from 'react';
+import myContext from '../../context/data/myContext';
 
 function Profile() {
+  const context = useContext(myContext)
+  const { mode, product ,searchkey, setSearchkey,filterType,setFilterType,
+      filterPrice,setFilterPrice} = context
   const userData = JSON.parse(localStorage.getItem('user'));
   const [orderCount, setOrderCount] = useState(0);
 
