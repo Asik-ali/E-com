@@ -177,7 +177,7 @@ function Navbar() {
                     <span className="ml-3 block text-sm font-medium" style={{ color: mode === 'dark' ? 'white' : '', }}>INDIA</span>
                   </a>
                 </div>
-                <div className="hidden lg:ml-8 lg:flex">
+                {/* <div className="hidden lg:ml-8 lg:flex">
                   <Link to={'/profile'} className="flex items-center text-gray-700 " style={{ color: mode === 'dark' ? 'white' : '', }}>
 
                     <img
@@ -186,7 +186,7 @@ function Navbar() {
                       alt="Dan_Abromov" />
 
                   </Link>
-                </div>
+                </div> */}
 
                 <div className="flex lg:ml-6">
                   <button className='' onClick={toggleMode}>
