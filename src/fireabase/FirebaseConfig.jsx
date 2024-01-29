@@ -6,14 +6,14 @@ import {getAuth} from 'firebase/auth';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBdvBv3Q-mCvn5fUnNFlyexl4eHYWf2dBU",
-  authDomain: "ecom-41676.firebaseapp.com",
-  projectId: "ecom-41676",
-  storageBucket: "ecom-41676.appspot.com",
-  messagingSenderId: "961849005296",
-  appId: "1:961849005296:web:5b6938aa8acddfc9171e35"
+  apiKey: "AIzaSyBTRXKmBScxijD9n7jRErbHda_e6uD404E",
+  authDomain: "zero-ads-wallet.firebaseapp.com",
+  projectId: "zero-ads-wallet",
+  storageBucket: "zero-ads-wallet.appspot.com",
+  messagingSenderId: "125107972552",
+  appId: "1:125107972552:web:52793904858742943538fd",
+  measurementId: "G-98FKS26TXT"
 };
-
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
