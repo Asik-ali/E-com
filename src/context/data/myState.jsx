@@ -4,8 +4,6 @@ import { Timestamp, addDoc, collection, deleteDoc, doc, getDocs, onSnapshot, ord
 import { toast } from 'react-toastify';
 import { fireDB } from '../../fireabase/FirebaseConfig';
 
-
-
 function myState(props) {
     const [mode, setMode] = useState('light');
 
@@ -40,7 +38,7 @@ function myState(props) {
     });
 
     const addProduct = async () => {
-        if (products.title == null || products.price == null || products.imageUrl == null || products.category == null || products.description == null) {
+        if (products.title == null  || products.imageUrl == null || products.category == null || products.description == null) {
             return toast.error("all fields are required")
         }
 
