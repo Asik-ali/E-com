@@ -17,7 +17,7 @@ function Cart() {
   const dispatch = useDispatch()
 
   const cartItems = useSelector((state) => state.cart);
-  // console.log(cartItems)
+  console.log(cartItems)
 
   const deleteCart = (item) => {
     dispatch(deleteFromCart(item));
@@ -83,12 +83,12 @@ function Cart() {
     }
 
     var options = {
-      key: "rzp_test_7peS86S2kg20zp",
+      key: "",
       key_secret: "",
       amount: parseInt(grandTotal * 100),
       currency: "INR",
       order_receipt: 'order_rcptid_' + name,
-      name: "RIO",
+      name: "E-Bharat",
       description: "for testing purpose",
       handler: function (response) {
         console.log(response)
@@ -129,13 +129,13 @@ function Cart() {
 
     var pay = new window.Razorpay(options);
     pay.open();
-    // console.log(pay)
+    console.log(pay)
 
 
   }
   return (
     <Layout >
-      <div className="h-screen bg-gray-100 pt-5 mb-[5%] " style={{ backgroundColor: mode === 'dark' ? '#282c34' : '', color: mode === 'dark' ? 'white' : '', }}>
+      <div className="h-screen bg-gray-100 pt-5 mb-[60%] " style={{ backgroundColor: mode === 'dark' ? '#282c34' : '', color: mode === 'dark' ? 'white' : '', }}>
         <h1 className="mb-10 text-center text-2xl font-bold">Cart Items</h1>
         <div className="mx-auto max-w-5xl justify-center px-6 md:flex md:space-x-6 xl:px-0 ">
           <div className="rounded-lg md:w-2/3 ">

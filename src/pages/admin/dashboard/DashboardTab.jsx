@@ -279,7 +279,6 @@ function DashboardTab() {
                                             <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
                                                 {uid}
                                             </td>
-                                            
 
                                         </tr>
                                     </tbody>
